@@ -1,1 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.4s ease-in-out;
+}
+
+.sidebar h2 {
+    color: orange;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: gray;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.content {
+    margin-left: 20px;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.4s ease-in-out;
+}
