@@ -1,13 +1,14 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #add8e6; 
 }
 
 .sidebar {
     width: 250px;
     height: 100vh;
-    background: linear-gradient(135deg, #536077, #3a475e);
+    background: linear-gradient(135deg, #5a7d9a, #7fa1bf);
     padding-top: 20px;
     position: fixed;
     top: 0;
@@ -80,7 +81,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #536077, #3a475e);
+    background: linear-gradient(135deg, #5a7d9a, #7fa1bf);
     padding: 12px 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease;
@@ -108,4 +109,11 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
     color: #f4f4f4;
     transform: scale(1.05);
+}
+
+.logo-container img {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+    margin: auto;
 }
